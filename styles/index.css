@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh !important;
+  width: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  padding-bottom: 10vh !important;
+}
+
+.max-width {
+  width: 100vw;
+}
+
+.login-btn {
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .motoboy {
+    max-width: 900px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .login-btn {
+    width: 100%;
+  }
+}

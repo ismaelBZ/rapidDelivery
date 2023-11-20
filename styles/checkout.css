@@ -1,0 +1,30 @@
+body {
+  background-color: #171717;
+}
+
+.info-wrapper {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  background-color: #ddd !important;
+}
+
+.delivery-info {
+  background-color: #eee;
+  margin-bottom: 4rem !important;
+}
+
+.checkout-btn { 
+  border: 2px solid #F20045;
+}
+
+.checkout-btn:hover {
+  background-color: transparent;
+  transition: 200ms; 
+}
+
+.checkout-btn:active {
+  transform: scale(0.98);
+  transition: 200ms; 
+}

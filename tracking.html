@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RapidDelivery</title>
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <!-- styles -->
+  <link rel="stylesheet" href="./styles/tracking.css" />
+</head>
+<body>
+  <!-- map -->
+  <div class="map-wrapper">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d40194.88977284048!2d-46.47632057846525!3d-23.57333908238109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1700399370313!5m2!1spt-BR!2sbr"  
+      class="map"
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+  <!-- package icon -->
+  <div class="package-wrapper">
+    <svg
+      class="package" 
+      viewBox="0 0 58 66" 
+      fill="none" 
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path d="M44.0477 24.2233L29.1643 64.1548L1.19775 48.3861V16.8459L44.0477 24.2233Z" fill="#E0B76E"/>
+      <path d="M29.1643 1.07715L1.19775 16.8459L29.1643 32.6161V64.1549L57.1309 48.3861V16.8459L29.1643 1.07715Z" fill="#F4CE8F"/>
+      <path d="M29.2622 32.616V64.1548L57.2288 48.3861V16.8459L29.2622 32.616Z" fill="#F2CA7F"/>
+      <path d="M39.8914 53.4346C40.3457 53.4346 40.7141 53.0649 40.7141 52.6088V40.7417L41.6645 41.4044C42.0378 41.6647 42.5504 41.5719 42.8096 41.1975C43.0689 40.823 42.9766 40.3085 42.6035 40.0483L40.3609 38.4843C40.1705 38.3515 39.9331 38.3056 39.7072 38.3577C39.4812 38.4099 39.2876 38.5551 39.1741 38.758L36.8599 42.8935C36.6374 43.291 36.7782 43.7944 37.1744 44.0177C37.3018 44.0895 37.4401 44.1236 37.5766 44.1236C37.8645 44.1236 38.1437 43.9718 38.2946 43.7021L39.0688 42.3186V52.6086C39.0686 53.0649 39.437 53.4346 39.8914 53.4346Z" fill="black"/>
+      <path d="M46.7061 49.4357C47.1664 49.4357 47.5396 49.066 47.5396 48.61V36.7428L48.5026 37.4055C48.8807 37.6659 49.4001 37.5731 49.6627 37.1986C49.9254 36.8242 49.8319 36.3097 49.4539 36.0494L47.1818 34.4854C46.9889 34.3526 46.7484 34.3067 46.5195 34.3588C46.2905 34.411 46.0943 34.5563 45.9794 34.7592L43.6348 38.8947C43.4093 39.2922 43.552 39.7955 43.9534 40.0188C44.0824 40.0907 44.2225 40.1248 44.3608 40.1248C44.6525 40.1248 44.9354 39.9729 45.0883 39.7032L45.8727 38.3198V48.6097C45.8725 49.066 46.2457 49.4357 46.7061 49.4357Z" fill="black"/>
+      <path d="M10.4634 22.0704L38.4299 6.30164L47.0836 11.1799H47.0819L19.1153 26.9501V38.0511L10.4634 33.1137V22.0704Z" fill="#FE0935"/>
+      <path d="M47.0372 11.2013L56.3854 16.7713C56.5847 16.89 56.5825 17.1792 56.3816 17.295V17.295M47.0372 11.2013L38.2641 6.10064M47.0372 11.2013L18.6278 26.925M28.9924 33.0458L56.3816 17.295M28.9924 33.0458C28.9924 34.678 29.491 63.9623 29.491 63.9623M28.9924 33.0458L18.6278 26.925M56.3816 17.295V48.2255C56.3816 48.5865 56.187 48.9195 55.8725 49.0967L29.491 63.9623M29.491 63.9623L2.86091 49.092C2.54832 48.9175 2.35289 48.5891 2.34852 48.2311L1.97617 17.7313M9.81394 22.2544L2.53627 18.1594C1.8595 17.7786 1.8561 16.8054 2.53018 16.4199L28.9904 1.28629C29.3002 1.10911 29.681 1.11046 29.9895 1.28984L38.2641 6.10064M9.81394 22.2544L10.3644 32.6719C10.3829 33.022 10.5834 33.3368 10.8928 33.5017L17.5776 37.0627C18.2615 37.427 19.082 36.9088 19.0468 36.1347L18.6278 26.925M9.81394 22.2544L38.2641 6.10064M9.81394 22.2544L18.6278 26.925" stroke="#232323" stroke-width="2"/>
+    </svg>
+  </div>
+  <!-- delivery info -->
+  <div class="delivery-wrapper">
+    <p class="delivery-counter">2 of 3</p>
+    <div class="delivery-info text-center">  
+      <button class="btn fs-3 previous-delivery"
+        style="background-color: #FAFF1E;"
+      >
+        &#8828;
+      </button>
+      <div class="client-info">
+        <p class="client-name mb-2">Client Name</p>
+        <p class="delivery-price">R$15.00</p>
+      </div>
+      <button class="btn fs-3 next-delivery"
+        style="background-color: #FAFF1E;"
+        >
+        &#8829;
+      </button>
+    </div>
+    <!-- pilot -->
+    <div class="pilot-wrapper">
+      <div class="pilot">
+        <img 
+          class="pilot-photo"
+          src="https://randomuser.me/api/portraits/med/women/27.jpg" 
+          alt="Pilot photo" /
+        >
+        <div class="pilot-info">
+          <p class="pilot-name">Pilot Name</p>
+          <p class="pilot-classification">&#9733;&#9733;&#9733;&#9733; 4.0</p>
+        </div>
+      </div>
+      <button class="btn call-pilot">Call</button>
+    </div>
+  </div>
+  <!--bootstrap-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
