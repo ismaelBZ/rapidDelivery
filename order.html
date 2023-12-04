@@ -3,13 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>RapidDelivery</title>
-  <!-- bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-  <!-- styles -->
+  <title>RapidDelivery - Order</title>
+  <link rel="stylesheet" href="./styles/reset.css" />
   <link rel="stylesheet" href="./styles/order.css" />
 </head>
 <body>
+
   <!-- map -->
   <div class="map-wrapper">
     <iframe 
@@ -20,6 +19,7 @@
       referrerpolicy="no-referrer-when-downgrade">
     </iframe>
   </div>
+
   <!-- package icon -->
   <div class="package-wrapper">
     <svg
@@ -37,16 +37,16 @@
       <path d="M47.0372 11.2013L56.3854 16.7713C56.5847 16.89 56.5825 17.1792 56.3816 17.295V17.295M47.0372 11.2013L38.2641 6.10064M47.0372 11.2013L18.6278 26.925M28.9924 33.0458L56.3816 17.295M28.9924 33.0458C28.9924 34.678 29.491 63.9623 29.491 63.9623M28.9924 33.0458L18.6278 26.925M56.3816 17.295V48.2255C56.3816 48.5865 56.187 48.9195 55.8725 49.0967L29.491 63.9623M29.491 63.9623L2.86091 49.092C2.54832 48.9175 2.35289 48.5891 2.34852 48.2311L1.97617 17.7313M9.81394 22.2544L2.53627 18.1594C1.8595 17.7786 1.8561 16.8054 2.53018 16.4199L28.9904 1.28629C29.3002 1.10911 29.681 1.11046 29.9895 1.28984L38.2641 6.10064M9.81394 22.2544L10.3644 32.6719C10.3829 33.022 10.5834 33.3368 10.8928 33.5017L17.5776 37.0627C18.2615 37.427 19.082 36.9088 19.0468 36.1347L18.6278 26.925M9.81394 22.2544L38.2641 6.10064M9.81394 22.2544L18.6278 26.925" stroke="#232323" stroke-width="2"/>
     </svg>
   </div>
+
   <!-- delivery info -->
-  <div class="delivery-wrapper">
-    <input class="delivery-input" type="text" placeholder="Nome do cliente" />
-    <input class="delivery-input" type="text" placeholder="Endereço de partida" />
-    <input class="delivery-input" type="text" placeholder="Endereço de destino" />
-    <input class="delivery-input" type="tel" placeholder="(11)99999-9999" />
+  <form class="delivery-wrapper" method="post" action="./scripts/domManipulation.js" >
+    <input class="delivery-input" type="tel" name="client-name" placeholder="Nome do destinatário" autocomplete required />
+    <input class="delivery-input" type="text" name="shop-address" placeholder="Endereço de partida" autocomplete required />
+    <input class="delivery-input" type="text" name="client-address" placeholder="Endereço de destino" autocomplete required/>
     <!-- Fazer Pedido -->
-    <a class="container text-center" href="./checkout.html">
-      <button class="order-btn">
-        <svg  class="w-75 container-xxl"
+    <!-- <a class="order-btn-wrapper" href="./checkout.html"> -->
+      <button class="order-btn" type="submit">
+        <svg  class="btn-rapid-logo"
             style="max-height: 70px;"
             xmlns="http://www.w3.org/2000/svg" 
             viewBox="0 0 2461 464">
@@ -73,8 +73,6 @@
       </svg>
       </button>
     </a>
-  </div>
-  <!--bootstrap-->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </form>
 </body>
 </html>
