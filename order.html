@@ -5,29 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>RapidDelivery - Order</title>
   <link rel="stylesheet" href="./styles/reset.css" />
+  <link rel="stylesheet" href="./styles/maps.css" />
   <link rel="stylesheet" href="./styles/order.css" />
 </head>
 <body>
-
+  
   <!-- map -->
   <div class="map-wrapper">
     <iframe 
-      src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d40194.88977284048!2d-46.47632057846525!3d-23.57333908238109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1700399370313!5m2!1spt-BR!2sbr"  
-      class="map"
-      allowfullscreen="" 
-      loading="lazy" 
-      referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
-  </div>
+    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d40194.88977284048!2d-46.47632057846525!3d-23.57333908238109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1700399370313!5m2!1spt-BR!2sbr"  
+    class="map"
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
 
-  <!-- package icon -->
-  <div class="package-wrapper">
-    <svg
-      class="package" 
-      viewBox="0 0 58 66" 
-      fill="none" 
-      xmlns="http://www.w3.org/2000/svg"
-    >
+<!-- package icon -->
+<div class="package-wrapper">
+  <svg
+  class="package" 
+  viewBox="0 0 58 66" 
+  fill="none" 
+  xmlns="http://www.w3.org/2000/svg"
+  >
       <path d="M44.0477 24.2233L29.1643 64.1548L1.19775 48.3861V16.8459L44.0477 24.2233Z" fill="#E0B76E"/>
       <path d="M29.1643 1.07715L1.19775 16.8459L29.1643 32.6161V64.1549L57.1309 48.3861V16.8459L29.1643 1.07715Z" fill="#F4CE8F"/>
       <path d="M29.2622 32.616V64.1548L57.2288 48.3861V16.8459L29.2622 32.616Z" fill="#F2CA7F"/>
@@ -37,21 +38,24 @@
       <path d="M47.0372 11.2013L56.3854 16.7713C56.5847 16.89 56.5825 17.1792 56.3816 17.295V17.295M47.0372 11.2013L38.2641 6.10064M47.0372 11.2013L18.6278 26.925M28.9924 33.0458L56.3816 17.295M28.9924 33.0458C28.9924 34.678 29.491 63.9623 29.491 63.9623M28.9924 33.0458L18.6278 26.925M56.3816 17.295V48.2255C56.3816 48.5865 56.187 48.9195 55.8725 49.0967L29.491 63.9623M29.491 63.9623L2.86091 49.092C2.54832 48.9175 2.35289 48.5891 2.34852 48.2311L1.97617 17.7313M9.81394 22.2544L2.53627 18.1594C1.8595 17.7786 1.8561 16.8054 2.53018 16.4199L28.9904 1.28629C29.3002 1.10911 29.681 1.11046 29.9895 1.28984L38.2641 6.10064M9.81394 22.2544L10.3644 32.6719C10.3829 33.022 10.5834 33.3368 10.8928 33.5017L17.5776 37.0627C18.2615 37.427 19.082 36.9088 19.0468 36.1347L18.6278 26.925M9.81394 22.2544L38.2641 6.10064M9.81394 22.2544L18.6278 26.925" stroke="#232323" stroke-width="2"/>
     </svg>
   </div>
-
+  
+  
+  
   <!-- delivery info -->
-  <form class="delivery-wrapper" method="post" action="./scripts/domManipulation.js" >
-    <input class="delivery-input" type="tel" name="client-name" placeholder="Nome do destinatário" autocomplete required />
-    <input class="delivery-input" type="text" name="shop-address" placeholder="Endereço de partida" autocomplete required />
-    <input class="delivery-input" type="text" name="client-address" placeholder="Endereço de destino" autocomplete required/>
-    <!-- Fazer Pedido -->
-    <!-- <a class="order-btn-wrapper" href="./checkout.html"> -->
+    <form class="delivery-wrapper" action="./checkout.html">
+      <input class="delivery-input" type="tel" id="client-name" name="client-name" placeholder="Nome do cliente" autocomplete required />
+      <input class="delivery-input" type="text" id="shop-address" name="shop-address" placeholder="Endereço de partida" autocomplete required />
+      <input class="delivery-input" type="text" id="client-address" name="client-address" placeholder="Endereço de destino" autocomplete required/>
+      <input class="delivery-input" type="tel" id="client-phone" name="client-phone" placeholder="Telefone do cliente" autocomplete required/>
+      <!-- Fazer Pedido -->
+      <!-- <a class="order-btn-wrapper" href="./checkout.html"> -->
       <button class="order-btn" type="submit">
         <svg  class="btn-rapid-logo"
             style="max-height: 70px;"
             xmlns="http://www.w3.org/2000/svg" 
             viewBox="0 0 2461 464">
-        <defs>
-          <style>
+            <defs>
+              <style>
             .cls-1 {
               fill: #f20045;
             }
@@ -71,8 +75,9 @@
         <path id="Color_Fill_2" data-name="Color Fill 2" class="cls-2" d="M394.015,250.144L289.1,303.108v42.971l-25.979-13.99,0.038-41.421,104.149-53.735Z"/>
         <path id="rapidDelivery_1" data-name="rapidDelivery 1" class="cls-1" d="M545.994,345.787V124h94.4s53.944,13.1,53.944,67.208S660.625,251.7,660.625,251.7l53.944,94.091H653.882l-53.944-87.371v87.371H545.994Zm53.944-181.462v73.929s33.715-14.7,33.715-40.325S599.938,164.325,599.938,164.325ZM856.172,332.346s-28.6,13.441-60.687,13.441-74.173-1.695-74.173-53.766,64.457-54.109,80.916-53.767c0-2.8,4.062-10.1,0-13.442-1.853-1.523-14.686-7.026-26.972-6.721-14.656.364-29.272,6.721-33.715,6.721-8.168,0-3.512-19.942-13.486-26.883-7.874-5.48,27.564-13.442,53.944-13.442,11.819,0,33.52-1.124,47.2,6.721,11.077,6.352,20.229,18.758,20.229,33.6C849.429,251.71,856.172,332.346,856.172,332.346Zm-47.2-60.488v33.6H775.256s-14.695,1.484-13.486-20.162C762.868,265.635,808.971,271.858,808.971,271.858Zm74.173-87.371-20.229,26.884v6.72h26.972V413h47.2v-73.93h60.687c-1.111,0,40.455-22.754,40.455-80.65s-38.647-73.929-60.684-73.929-32.017,13.442-40.458,13.442h-6.743V184.487h-47.2Zm182.056,161.3h47.21v-161.3H1065.2l-20.22,26.884v6.72h20.22v127.7Zm0-215.066v40.325h47.21V130.721H1065.2Zm168.58,0L1213.55,157.6v6.721h26.97v20.162h-47.2s-53.94,25.405-53.94,80.65,47.2,80.65,47.2,80.65,109.12,2.038,94.4-6.721V130.721h-47.2Zm6.74,94.091v73.929h-33.71s-20.23-3.8-20.23-33.6,20.23-40.325,20.23-40.325h33.71ZM1321.44,124V345.787h94.4s80.92-13.207,80.92-107.533S1415.84,124,1415.84,124h-94.4Zm47.2,40.325V305.462h33.71s40.46-10.463,40.46-67.208-40.46-73.929-40.46-73.929h-33.71M937.088,238.254v60.487H964.06s26.971-.386,26.971-33.6-9.819-40.325-26.971-40.325S937.088,238.254,937.088,238.254Zm586.642,20.162c0-66.289,44.01-73.929,67.43-73.929s74.17-.837,74.17,60.488v33.6h-94.4s0.72,26.883,20.23,26.883,33.71-20.162,33.71-20.162l40.46,20.162s-29.22,40.325-74.17,40.325S1523.73,324.705,1523.73,258.416Zm47.2-13.441h53.94s1.49-26.884-26.97-26.884S1570.93,244.975,1570.93,244.975ZM1692.3,124V305.462c0,21.965,27.23,33.756,27.23,33.756l53.69-.152v-33.6h-20.23c-7.36,0-13.49-7-13.49-13.441V124h-47.2Zm101.15,60.487-20.23,26.884v6.72h20.23V339.066h47.2V184.487h-47.2Zm0-53.766v40.325h47.2V130.721h-47.2Zm67.43,53.766v6.721h6.74l47.2,147.858h53.95l53.94-147.858h6.74v-6.721h-60.68l-20.23,94.092h-6.75l-26.97-94.092h-53.94Zm168.57,73.929c0-66.289,44.02-73.929,67.43-73.929s74.17-.837,74.17,60.488v33.6h-94.4s0.72,20.162,20.23,20.162S2130.6,285.3,2130.6,285.3l40.45,20.162s-29.21,33.6-74.17,33.6S2029.45,324.705,2029.45,258.416Zm47.2-13.441h53.95s1.48-26.884-26.97-26.884S2076.65,244.975,2076.65,244.975Zm121.38,94.091h40.45V244.975c0-6.315,19.13-26.45,47.21-26.884v-33.6h-33.72s-11.77,14.981-13.49,13.442,0-13.442,0-13.442h-47.2l-13.48,26.884v6.72h20.23V339.066Zm101.14-154.579,47.2,154.579h26.97s-0.41,19.236-6.74,26.884c-6.2,7.494-33.71,6.721-33.71,6.721l-13.49,33.6s57,10.205,74.17-20.163S2461,184.487,2461,184.487h-47.2l-26.97,107.534h-6.74l-26.97-107.534h-53.95Z"/>
       </svg>
-      </button>
-    </a>
+    </button>
+  </a>
   </form>
+  <script type="text/javascript" src="./order.js"></script>
 </body>
 </html>

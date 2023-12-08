@@ -4,10 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>RapidDelivery</title>
-  <!-- bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-  <!-- styles -->
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" /> -->
+  <link rel="stylesheet" href="./styles/reset.css" />
+  <link rel="stylesheet" href="./styles/maps.css" />
   <link rel="stylesheet" href="./styles/tracking.css" />
+  <script type="text/javascript" src="./tracking.js"></script>
 </head>
 <body>
   <!-- map -->
@@ -39,16 +40,16 @@
   </div>
   <!-- delivery info -->
   <div class="delivery-wrapper">
-    <p class="delivery-counter">2 of 3</p>
-    <div class="delivery-info text-center">  
-      <button class="btn fs-3 previous-delivery"
+    <p class="delivery-counter">1 of 3</p>
+    <div class="delivery-info">  
+      <button class="btn previous-delivery"
         style="background-color: #FAFF1E;"
       >
         &#8828;
       </button>
       <div class="client-info">
-        <p class="client-name mb-2">Client Name</p>
-        <p class="delivery-price">R$15.00</p>
+        <p class="client-name"></p>
+        <p class="delivery-price"></p>
       </div>
       <button class="btn fs-3 next-delivery"
         style="background-color: #FAFF1E;"
@@ -62,8 +63,8 @@
         <img 
           class="pilot-photo"
           src="https://randomuser.me/api/portraits/med/women/27.jpg" 
-          alt="Pilot photo" /
-        >
+          alt="Pilot photo" 
+        />
         <div class="pilot-info">
           <p class="pilot-name">Pilot Name</p>
           <p class="pilot-classification">&#9733;&#9733;&#9733;&#9733; 4.0</p>
@@ -73,6 +74,7 @@
     </div>
   </div>
   <!--bootstrap-->
+  <script type="text/javascript" src="./tracking_pilot_info.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

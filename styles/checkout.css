@@ -3,25 +3,58 @@ body {
 }
 
 .info-wrapper {
-  display: flex !important;
-  flex-direction: row !important;
-  justify-content: space-between !important;
-  align-items: center !important;
-  background-color: #ddd !important;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2vh;
 }
 
-.delivery-info {
-  background-color: #eee;
-  margin-bottom: 4rem !important;
+.info {
+  display: flex;
+  margin-top: 1.5rem;
+  padding:  1.5rem 1rem;
+  border-radius: 0.25rem;
+  color: #252525;
+  justify-content: space-between;
+  background-color: #ddd;
 }
 
-.checkout-btn { 
-  border: 2px solid #F20045;
+.delivery {
+  flex-direction: column;
+  gap: 1rem;
+}
+
+span {
+  float: right;
+  margin-left: 3vw;
+}
+
+.checkout-btn-wrapper {
+  margin: 0 auto;
+}
+
+.checkout-btn {
+  margin: 3vh 0;
+  padding: 3vh 10vw;
+  border: 2px solid #FAFF1E;
+  font-family: "Ubuntu", monospace;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #ddd;
+  text-decoration: none;
+  background-color: transparent;
+  box-shadow: 
+  0px 0px 4px #FAFF1E,
+  inset 0px 0px 4px #FAFF1E;
+  cursor: pointer;
 }
 
 .checkout-btn:hover {
-  background-color: transparent;
-  transition: 200ms; 
+  color: #171717;
+  background-color: #FAFF1E;
+  transition: 200ms;
 }
 
 .checkout-btn:active {
