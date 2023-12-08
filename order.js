@@ -8,5 +8,5 @@ form.addEventListener("submit", (e) => {
     sessionStorage.setItem(`${name.toUpperCase()}`, `${value}`);
   }
   
- window.location.pathname = "/checkout.html"
+ window.location.pathname = "checkout.html"
 })
